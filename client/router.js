@@ -307,7 +307,7 @@ Router.prototype.subsReady = function() {
 
   var isReady = function() {
     var ready =  _.every(subscriptions, function(sub) {
-      return sub && sub.ready();
+      return false;
     });
 
     return ready;
